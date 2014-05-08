@@ -7080,7 +7080,7 @@
 					"-DOPENSSL_NO_STORE",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				SDKROOT = iphoneos;
+				SDKROOT = macosx10.9;
 			};
 			name = Debug;
 		};
@@ -7107,7 +7107,7 @@
 					"-DOPENSSL_NO_STORE",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				SDKROOT = iphoneos;
+				SDKROOT = macosx10.9;
 			};
 			name = Release;
 		};

@@ -12,6 +12,8 @@
 #import "SKTCPSSLSocket.h"
 #import "SSLServerTest.h"
 
+#import "ldapTest.h"
+
 void serverTestSSL () {
 	SSLServerTest * serverTest = [[SSLServerTest alloc] init];
 	[serverTest testServer];
@@ -46,15 +48,14 @@ void googleTest () {
 
 int main (int argc, const char * argv[]) {
 	NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-	
-
-		serverTestSSL();
-
-	
+    serverTestSSL();
 	printf("\n");
-	NSLog(@"Program done.");
-	
-
+    
+    ldapTest *l = [[ldapTest alloc]init];
+    int i = [l addASync];
+    
+    NSLog(@"result : %d",i);
+    NSLog(@"Program done.");
 	
 	[pool drain];
     return 0;

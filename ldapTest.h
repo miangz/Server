@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface ldapTest : NSObject
-
+-(int)addASync;
 @end
